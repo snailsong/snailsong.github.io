@@ -24,6 +24,8 @@ body {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
+    padding-top: 10%;
+    font-size: 20px;
 }
 
 
@@ -36,4 +38,42 @@ body {
   width: 100vw;
   height: 100vh;
   background: var(--bg-color);
+}
+
+h1 {
+    font
+}
+
+.introduction {
+}
+
+button {   
+    height: 40px;
+    width: 80px;
+    border-radius: 10px; 
+}
+
+.cv {
+    background-color: var(--black);
+    color: var(--bg-color)
+}
+
+.email {
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    border-style: double;
+    border-color: var(--accent-color);
+
+}
+
+
+.cv:hover {
+  background-color: var(--bg-color);
+  color: var(--dark-grey);
+}
+
+
+.email:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }

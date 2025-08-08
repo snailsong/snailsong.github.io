@@ -90,10 +90,10 @@ class Electron {
     }
 }
 
-const nucleus = new Nucleus(canvas.width/2, canvas.height/2, 0.1, 1);
-const a0 = 5000;
+const nucleus = new Nucleus(canvas.width*0.75, canvas.height/2, 2, 1);
+const a0 = 2000;
 
-Z = 38;
+Z = 75;
 
 let electrons_to_allocate = Z;
 shells = []
@@ -110,7 +110,7 @@ while (electrons_to_allocate > 0) {
     n++;
 }
 for (let i = 0; i < shells.length; i++) {
-    shell = new Shell((i**1.2)*a0/Z, 0.2);
+    shell = new Shell((i**2)*a0/Z, 0.2);
     for (let j = 0; j < shells[i]; j++) {
         shell.addAtom(new Electron(4, 1, (j/shells[i])*Math.PI*2));
     }
