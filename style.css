@@ -1,0 +1,266 @@
+:root {
+    --title: #404040;
+    --bg-color: #f6eee8;
+    --polka-dot: #d8d0c7;
+    --bg-grey: #696860;
+    --accent-color: #f29434;
+    --dark-grey: #2c2c2c;
+    --black: #1d1d1d;
+    --light-grey: #b6b6b6;
+    --white: #e5dcd1;
+}
+
+
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color); 
+  font-family: "Ubuntu", sans-serif;;
+  font-optical-sizing: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+
+#background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10; /* Behind everything */
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+}
+
+
+
+.intro {
+  margin: 25vh auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 50px; 
+  box-sizing: border-box;
+
+  /* border */
+  border-style: dotted;
+  border-color: var(--polka-dot);
+  background-color: var(--bg-color);
+  border-radius: 10px; 
+  text-align: left;
+  opacity: 0.8;
+}
+
+.intro {
+  
+  max-width: 520px;
+  margin-bottom: 30vh;
+
+}
+
+.wrapper {
+  min-width: 1000px;
+  max-width: 1000px;
+  opacity: 1;
+  background-color: var(--bg-color);
+  padding: 100px;
+  border-style: double;
+  border-color: var(--accent-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  border-width: 10px; 
+  text-align: left;
+  margin-top: 100px;
+}
+
+.avatar-wrapper {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+  background-color: var(--dark-grey);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.biography {
+    font-size: 16px;
+    font-optical-sizing: auto;
+    max-width: 350px;
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+    border-style: dotted;
+    border-color: var(--accent-color);
+    border-radius: 10px; 
+    text-align: left;
+
+
+    background-color: var(--bg-grey);
+    color: var(--bg-color);
+    font-family: "Cascadia Code", sans-serif;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+
+}
+
+.bio-bold {
+  color: var(--dark-grey);
+  font-weight: 900;
+}
+
+.code {
+    font-size: 16px;
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+    max-width: 350px;
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+    border-style: dotted;
+    border-color: var(--accent-color);
+    border-radius: 10px; 
+    text-align: left;
+}
+
+
+hr {
+    border-top: 1px dashed grey;
+}
+
+li {
+
+}
+
+h1 {
+    color: var(--title);
+    font-weight: 500;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+
+.name-wrapper {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.title-wrapper {
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+.name {
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.orangeText {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+p {
+  font-size: 1em;
+}
+
+.experience-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.experience-titles {
+  flex: 1;
+  max-width: 230px;
+  padding-right: 50px;
+
+}
+
+.experience-text {
+  flex: 1;
+}
+
+
+
+.description {
+  max-width: 600px;
+}
+
+button {
+  width: 100%;
+  align-items: left;
+  text-align: left;
+  font-weight: 200;
+  text-transform: uppercase;
+
+  background-color: var(--bg-grey);
+  border-radius: 1.5rem;
+  line-height: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 1rem 1.6rem;
+  display: inline-block;
+  border-color: var(--bg-color);
+  color: var(--light-grey);
+}
+
+.button {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: left;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+
+}
+
+button:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
