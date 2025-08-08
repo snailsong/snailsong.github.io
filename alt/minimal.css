@@ -1,0 +1,39 @@
+:root {
+    --title: #404040;
+    --bg-color: #f6eee8;
+    --polka-dot: #d8d0c7;
+    --bg-grey: #696860;
+    --accent-color: #f29434;
+    --dark-grey: #2c2c2c;
+    --black: #1d1d1d;
+    --light-grey: #b6b6b6;
+    --white: #e5dcd1;
+}
+
+
+
+
+
+body {
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color); 
+    font-family: "Ubuntu", sans-serif;;
+    font-optical-sizing: auto;
+    margin: 10%;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+#background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+}
